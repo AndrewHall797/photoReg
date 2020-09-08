@@ -4,6 +4,7 @@ class CreateImages < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :description
       t.string :location
+      t.belongs_to :user
 
       t.timestamps
     end
